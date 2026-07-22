@@ -1,0 +1,13 @@
+{
+  "name": "studiosorted-site",
+  "version": "1.0.0",
+  "description": "StudioSorted — Independent UK software reviews for martial arts schools and sport/wellness studios",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "watch": "eleventy --watch"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
