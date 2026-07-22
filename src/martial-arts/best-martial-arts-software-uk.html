@@ -24,8 +24,15 @@ header{border-bottom:2px solid var(--black);background:var(--white);position:sti
 .logo{font-family:var(--font-d);font-size:1.2rem;font-weight:700;color:var(--black);text-decoration:none;flex-shrink:0}
 .logo span{color:var(--accent)}
 .nav{display:flex;gap:0;list-style:none;margin:0}
+.nav>li{position:relative}
 .nav>li>a{display:block;font-size:0.8125rem;font-weight:500;color:var(--muted);text-decoration:none;padding:0.5rem 0.875rem}
 .nav>li>a:hover{color:var(--black)}
+.nav>li>a.has-dropdown::after{content:'▾';font-size:0.6rem;margin-left:0.3rem;vertical-align:middle}
+.dropdown{display:none;position:absolute;top:100%;left:0;background:var(--white);border:1px solid var(--border);border-top:2px solid var(--accent);border-radius:0 0 var(--r) var(--r);min-width:230px;z-index:300;box-shadow:0 4px 12px rgba(0,0,0,0.08)}
+.nav>li:hover .dropdown{display:block}
+.dropdown a{display:block;padding:0.625rem 1rem;font-size:0.8125rem;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--border);font-weight:400}
+.dropdown a:last-child{border-bottom:none}
+.dropdown a:hover{background:var(--accent-soft);color:var(--black)}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:0.5rem;background:none;border:none;margin-left:auto}
 .hamburger span{display:block;width:22px;height:2px;background:var(--black);transition:all 0.25s}
 .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
@@ -33,6 +40,8 @@ header{border-bottom:2px solid var(--black);background:var(--white);position:sti
 .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 .mobile-menu{display:none;background:var(--white);border-top:1px solid var(--border);padding:1rem 1.5rem 1.5rem}
 .mobile-menu.open{display:block}
+.mobile-section{margin-bottom:1.25rem}
+.mobile-section-label{font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:0.5rem;display:block}
 .mobile-menu a{display:block;font-size:0.9375rem;color:var(--ink);text-decoration:none;padding:0.5rem 0;border-bottom:1px solid var(--border);font-weight:400}
 .mobile-menu a:last-child{border-bottom:none}
 .mobile-menu a:hover{color:var(--accent)}
@@ -59,6 +68,7 @@ tr:nth-child(even) td{background:#f7f6f2}
 .catch p:last-child,.verdict p:last-child,.not-for p:last-child,.highlight p:last-child{margin-bottom:0}
 .card{border:1px solid var(--border);border-radius:var(--r);padding:1.25rem;margin:1rem 0}
 .card h3{margin-top:0}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.25rem 0}
 .tag{display:inline-block;font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.07em;padding:0.2rem 0.5rem;border-radius:3px;margin-bottom:0.5rem}
 .tag-best{background:var(--green-soft);color:#166534}
 .tag-ok{background:var(--accent-soft);color:#5b21b6}
@@ -73,6 +83,9 @@ tr:nth-child(even) td{background:#f7f6f2}
 .faq-item:last-child{border-bottom:none}
 .faq-q{font-weight:600;color:var(--black);margin-bottom:0.5rem;font-size:0.9375rem}
 .faq-a{color:var(--ink);font-size:0.9375rem;margin:0}
+.cta-box{background:var(--black);border-radius:var(--r);padding:1.5rem;margin:2rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.cta-box p{color:#d4d4d4;margin:0;font-size:0.9rem}
+.cta-btn{background:var(--accent);color:var(--white)!important;padding:0.625rem 1.25rem;border-radius:var(--r);text-decoration:none!important;font-weight:600;font-size:0.9rem;white-space:nowrap;display:inline-block}
 .related{border-top:1px solid var(--border);margin-top:3rem;padding-top:1.5rem}
 .related-label{font-size:0.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-weight:600;margin-bottom:0.75rem}
 .related-links{display:flex;flex-direction:column;gap:0.5rem}
@@ -86,6 +99,8 @@ footer a{color:var(--muted)}
   main{padding:2rem 1rem 4rem}
   h1{font-size:1.625rem;line-height:1.2}
   h2{font-size:1.125rem}
+  .two-col{grid-template-columns:1fr}
+  .cta-box{flex-direction:column;align-items:flex-start}
   .quick-facts{grid-template-columns:1fr 1fr}
   table{font-size:0.8125rem}
   th,td{padding:0.5rem 0.625rem}
@@ -113,13 +128,53 @@ footer a{color:var(--muted)}
   <div class="hdr">
     <a href="/" class="logo">Studio<span>Sorted</span></a>
     <ul class="nav">
-      <li><a href="/martial-arts/best-martial-arts-software-uk">Martial Arts Software</a></li>
+      <li><a href="/martial-arts/best-martial-arts-software-uk">Best Software</a></li>
+      <li><a href="#" class="has-dropdown">By Discipline</a>
+        <div class="dropdown">
+          <a href="/martial-arts/bjj-jiu-jitsu-software">BJJ / Jiu-Jitsu Software</a>
+          <a href="/martial-arts/karate-studio-software">Karate Club Software</a>
+          <a href="/martial-arts/mma-gym-software">MMA Gym Software</a>
+        </div>
+      </li>
+      <li><a href="#" class="has-dropdown">Guides</a>
+        <div class="dropdown">
+          <a href="/martial-arts/belt-attendance-tracking-software">Belt &amp; Attendance Tracking</a>
+          <a href="/martial-arts/best-free-martial-arts-software">Best Free Software</a>
+        </div>
+      </li>
+      <li><a href="#" class="has-dropdown">Reviews</a>
+        <div class="dropdown">
+          <a href="/martial-arts/martialytics-review">Martialytics Review</a>
+          <a href="/martial-arts/martialytics-vs-kicksite">Martialytics vs Kicksite</a>
+          <a href="/martial-arts/martialytics-vs-rainmaker">Martialytics vs RainMaker</a>
+        </div>
+      </li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
   <nav class="mobile-menu" id="mobile-menu">
-    <a href="/">Home</a>
-    <a href="/martial-arts/best-martial-arts-software-uk">Best Martial Arts Software</a>
+    <div class="mobile-section">
+      <span class="mobile-section-label">Start here</span>
+      <a href="/">Home</a>
+      <a href="/martial-arts/best-martial-arts-software-uk">Best Martial Arts Software UK</a>
+    </div>
+    <div class="mobile-section">
+      <span class="mobile-section-label">By discipline</span>
+      <a href="/martial-arts/bjj-jiu-jitsu-software">BJJ / Jiu-Jitsu Software</a>
+      <a href="/martial-arts/karate-studio-software">Karate Club Software</a>
+      <a href="/martial-arts/mma-gym-software">MMA Gym Software</a>
+    </div>
+    <div class="mobile-section">
+      <span class="mobile-section-label">Guides</span>
+      <a href="/martial-arts/belt-attendance-tracking-software">Belt &amp; Attendance Tracking</a>
+      <a href="/martial-arts/best-free-martial-arts-software">Best Free Software</a>
+    </div>
+    <div class="mobile-section">
+      <span class="mobile-section-label">Reviews</span>
+      <a href="/martial-arts/martialytics-review">Martialytics Review</a>
+      <a href="/martial-arts/martialytics-vs-kicksite">Martialytics vs Kicksite</a>
+      <a href="/martial-arts/martialytics-vs-rainmaker">Martialytics vs RainMaker</a>
+    </div>
   </nav>
 </header>
 <script>
@@ -324,7 +379,12 @@ Not sure where to start
   <div class="related">
     <p class="related-label">Read next</p>
     <div class="related-links">
-      <a href="/">StudioSorted home</a>
+      <a href="/martial-arts/bjj-jiu-jitsu-software">BJJ / jiu-jitsu academy software</a>
+      <a href="/martial-arts/karate-studio-software">Karate club software</a>
+      <a href="/martial-arts/mma-gym-software">MMA gym software</a>
+      <a href="/martial-arts/belt-attendance-tracking-software">Belt &amp; attendance tracking compared</a>
+      <a href="/martial-arts/martialytics-review">Martialytics review</a>
+      <a href="/martial-arts/best-free-martial-arts-software">Best free martial arts software</a>
     </div>
   </div>
 </main>

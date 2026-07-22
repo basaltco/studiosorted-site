@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MMA Gym Software UK (2026): Multi-Discipline and Fight Team Management &mdash; StudioSorted</title>
+<meta name="description" content="Independent comparison of MMA gym management software for UK fight gyms. Multi-discipline timetables, membership tiers, fight team tracking, honest catches and real pricing.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#0f0f0f;--white:#fafaf8;--ink:#1c1c1c;--muted:#6b6b6b;
+  --border:#e2e0d8;--accent:#7c3aed;--accent-soft:#f5f3ff;
+  --orange-soft:#fff8f0;--red-soft:#fef2f2;--green-soft:#f0fdf4;
+  --font-d:'Fraunces',Georgia,serif;--font-b:'DM Sans',system-ui,sans-serif;
+  --r:6px;--max:760px;
+}
+body{font-family:var(--font-b);background:var(--white);color:var(--ink);line-height:1.7;font-size:16px}
+a{color:var(--accent);text-underline-offset:3px;font-weight:500}
+header{border-bottom:2px solid var(--black);background:var(--white);position:sticky;top:0;z-index:200}
+.hdr{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:58px;padding:0 1.5rem}
+.logo{font-family:var(--font-d);font-size:1.2rem;font-weight:700;color:var(--black);text-decoration:none;flex-shrink:0}
+.logo span{color:var(--accent)}
+.nav{display:flex;gap:0;list-style:none;margin:0}
+.nav>li{position:relative}
+.nav>li>a{display:block;font-size:0.8125rem;font-weight:500;color:var(--muted);text-decoration:none;padding:0.5rem 0.875rem}
+.nav>li>a:hover{color:var(--black)}
+.nav>li>a.has-dropdown::after{content:'▾';font-size:0.6rem;margin-left:0.3rem;vertical-align:middle}
+.dropdown{display:none;position:absolute;top:100%;left:0;background:var(--white);border:1px solid var(--border);border-top:2px solid var(--accent);border-radius:0 0 var(--r) var(--r);min-width:230px;z-index:300;box-shadow:0 4px 12px rgba(0,0,0,0.08)}
+.nav>li:hover .dropdown{display:block}
+.dropdown a{display:block;padding:0.625rem 1rem;font-size:0.8125rem;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--border);font-weight:400}
+.dropdown a:last-child{border-bottom:none}
+.dropdown a:hover{background:var(--accent-soft);color:var(--black)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:0.5rem;background:none;border:none;margin-left:auto}
+.hamburger span{display:block;width:22px;height:2px;background:var(--black);transition:all 0.25s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;background:var(--white);border-top:1px solid var(--border);padding:1rem 1.5rem 1.5rem}
+.mobile-menu.open{display:block}
+.mobile-section{margin-bottom:1.25rem}
+.mobile-section-label{font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:0.5rem;display:block}
+.mobile-menu a{display:block;font-size:0.9375rem;color:var(--ink);text-decoration:none;padding:0.5rem 0;border-bottom:1px solid var(--border);font-weight:400}
+.mobile-menu a:last-child{border-bottom:none}
+.mobile-menu a:hover{color:var(--accent)}
+main{max-width:var(--max);margin:0 auto;padding:2.5rem 1.5rem 5rem}
+.badge{background:var(--accent-soft);border:1px solid #c4b5fd;border-radius:var(--r);padding:0.375rem 0.875rem;font-size:0.8rem;color:#5b21b6;font-weight:500;display:inline-flex;align-items:center;gap:0.4rem;margin-bottom:1.75rem}
+h1{font-family:var(--font-d);font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;line-height:1.15;letter-spacing:-0.03em;color:var(--black);margin-bottom:1rem}
+h2{font-family:var(--font-d);font-size:1.25rem;font-weight:600;letter-spacing:-0.02em;color:var(--black);margin:2.25rem 0 0.625rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border)}
+h3{font-size:1rem;font-weight:600;color:var(--black);margin:1.5rem 0 0.4rem}
+p{margin-bottom:1rem}
+strong{font-weight:600;color:var(--black)}
+ul,ol{margin:0 0 1rem 1.25rem}
+li{margin-bottom:0.4rem}
+.table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.25rem 0;border-radius:var(--r);border:1px solid var(--border)}
+.table-wrap table{margin:0;border:none;border-radius:0;min-width:520px}
+table{width:100%;border-collapse:collapse;font-size:0.875rem;margin:1.25rem 0;border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+th{background:var(--black);color:var(--white);font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;padding:0.6rem 0.875rem;text-align:left;font-weight:600}
+td{padding:0.6rem 0.875rem;border-bottom:1px solid var(--border);vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even) td{background:#f7f6f2}
+.verdict{background:var(--accent-soft);border-left:3px solid var(--accent);border-radius:0 var(--r) var(--r) 0;padding:1rem 1.25rem;margin:1.25rem 0}
+.catch{background:var(--orange-soft);border-left:3px solid #f97316;border-radius:0 var(--r) var(--r) 0;padding:1rem 1.25rem;margin:1.25rem 0}
+.not-for{background:var(--red-soft);border-left:3px solid #ef4444;border-radius:0 var(--r) var(--r) 0;padding:1rem 1.25rem;margin:1.25rem 0}
+.highlight{background:var(--green-soft);border-left:3px solid #16a34a;border-radius:0 var(--r) var(--r) 0;padding:1rem 1.25rem;margin:1.25rem 0}
+.catch p:last-child,.verdict p:last-child,.not-for p:last-child,.highlight p:last-child{margin-bottom:0}
+.card{border:1px solid var(--border);border-radius:var(--r);padding:1.25rem;margin:1rem 0}
+.card h3{margin-top:0}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.25rem 0}
+.tag{display:inline-block;font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.07em;padding:0.2rem 0.5rem;border-radius:3px;margin-bottom:0.5rem}
+.tag-best{background:var(--green-soft);color:#166534}
+.tag-ok{background:var(--accent-soft);color:#5b21b6}
+.tag-weak{background:var(--red-soft);color:#991b1b}
+.decision{background:#f7f6f2;border:1px solid var(--border);border-radius:var(--r);padding:1.25rem;font-family:'Courier New',monospace;font-size:0.8125rem;line-height:1.9;margin:1.25rem 0;white-space:pre-wrap}
+.quick-facts{background:#f7f6f2;border:1px solid var(--border);border-radius:var(--r);padding:1.25rem;margin:1.25rem 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0.75rem}
+.qf-item{display:flex;flex-direction:column;gap:0.2rem}
+.qf-label{font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.07em;color:var(--muted)}
+.qf-value{font-size:0.9375rem;font-weight:600;color:var(--black)}
+.faq{margin:1.25rem 0}
+.faq-item{border-bottom:1px solid var(--border);padding:1rem 0}
+.faq-item:last-child{border-bottom:none}
+.faq-q{font-weight:600;color:var(--black);margin-bottom:0.5rem;font-size:0.9375rem}
+.faq-a{color:var(--ink);font-size:0.9375rem;margin:0}
+.cta-box{background:var(--black);border-radius:var(--r);padding:1.5rem;margin:2rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.cta-box p{color:#d4d4d4;margin:0;font-size:0.9rem}
+.cta-btn{background:var(--accent);color:var(--white)!important;padding:0.625rem 1.25rem;border-radius:var(--r);text-decoration:none!important;font-weight:600;font-size:0.9rem;white-space:nowrap;display:inline-block}
+.related{border-top:1px solid var(--border);margin-top:3rem;padding-top:1.5rem}
+.related-label{font-size:0.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-weight:600;margin-bottom:0.75rem}
+.related-links{display:flex;flex-direction:column;gap:0.5rem}
+.related-links a{font-size:0.9375rem;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:0.5rem}
+.related-links a::before{content:'→';color:var(--accent);font-weight:700}
+footer{border-top:1px solid var(--border);padding:1.75rem 1.5rem;text-align:center;font-size:0.8rem;color:var(--muted)}
+footer a{color:var(--muted)}
+@media(max-width:680px){
+  .nav{display:none}
+  .hamburger{display:flex}
+  main{padding:2rem 1rem 4rem}
+  h1{font-size:1.625rem;line-height:1.2}
+  h2{font-size:1.125rem}
+  .two-col{grid-template-columns:1fr}
+  .cta-box{flex-direction:column;align-items:flex-start}
+  .quick-facts{grid-template-columns:1fr 1fr}
+  table{font-size:0.8125rem}
+  th,td{padding:0.5rem 0.625rem}
+}
+</style>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://studiosorted.co.uk/martial-arts/mma-gym-software/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "datePublished": "2026-07-22",
+  "dateModified": "2026-07-22",
+  "url": "https://studiosorted.co.uk/martial-arts/mma-gym-software/",
+  "headline": "MMA Gym Software UK (2026): Multi-Discipline and Fight Team Management",
+  "description": "Independent comparison of MMA gym management software for UK fight gyms. Multi-discipline timetables, membership tiers, fight team tracking, honest catches and real pricing.",
+  "author": {
+    "@type": "Organization",
+    "name": "StudioSorted"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "StudioSorted",
+    "url": "https://studiosorted.co.uk"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://studiosorted.co.uk/martial-arts/mma-gym-software/"
+  }
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="hdr">
+    <a href="/" class="logo">Studio<span>Sorted</span></a>
+    <ul class="nav">
+      <li><a href="/martial-arts/best-martial-arts-software-uk">Best Software</a></li>
+      <li><a href="#" class="has-dropdown">By Discipline</a>
+        <div class="dropdown">
+          <a href="/martial-arts/bjj-jiu-jitsu-software">BJJ / Jiu-Jitsu Software</a>
+          <a href="/martial-arts/karate-studio-software">Karate Club Software</a>
+          <a href="/martial-arts/mma-gym-software">MMA Gym Software</a>
+        </div>
+      </li>
+      <li><a href="#" class="has-dropdown">Guides</a>
+        <div class="dropdown">
+          <a href="/martial-arts/belt-attendance-tracking-software">Belt &amp; Attendance Tracking</a>
+          <a href="/martial-arts/best-free-martial-arts-software">Best Free Software</a>
+        </div>
+      </li>
+      <li><a href="#" class="has-dropdown">Reviews</a>
+        <div class="dropdown">
+          <a href="/martial-arts/martialytics-review">Martialytics Review</a>
+          <a href="/martial-arts/martialytics-vs-kicksite">Martialytics vs Kicksite</a>
+          <a href="/martial-arts/martialytics-vs-rainmaker">Martialytics vs RainMaker</a>
+        </div>
+      </li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu">
+    <div class="mobile-section">
+      <span class="mobile-section-label">Start here</span>
+      <a href="/">Home</a>
+      <a href="/martial-arts/best-martial-arts-software-uk">Best Martial Arts Software UK</a>
+    </div>
+    <div class="mobile-section">
+      <span class="mobile-section-label">By discipline</span>
+      <a href="/martial-arts/bjj-jiu-jitsu-software">BJJ / Jiu-Jitsu Software</a>
+      <a href="/martial-arts/karate-studio-software">Karate Club Software</a>
+      <a href="/martial-arts/mma-gym-software">MMA Gym Software</a>
+    </div>
+    <div class="mobile-section">
+      <span class="mobile-section-label">Guides</span>
+      <a href="/martial-arts/belt-attendance-tracking-software">Belt &amp; Attendance Tracking</a>
+      <a href="/martial-arts/best-free-martial-arts-software">Best Free Software</a>
+    </div>
+    <div class="mobile-section">
+      <span class="mobile-section-label">Reviews</span>
+      <a href="/martial-arts/martialytics-review">Martialytics Review</a>
+      <a href="/martial-arts/martialytics-vs-kicksite">Martialytics vs Kicksite</a>
+      <a href="/martial-arts/martialytics-vs-rainmaker">Martialytics vs RainMaker</a>
+    </div>
+  </nav>
+</header>
+<script>
+document.getElementById('hamburger').addEventListener('click',function(){
+  this.classList.toggle('open');
+  document.getElementById('mobile-menu').classList.toggle('open');
+});
+</script>
+
+<main>
+  <div class="badge">&#10003; Independent review &mdash; no sponsored content</div>
+  <h1>MMA Gym Software UK (2026)</h1>
+
+  <div class="quick-facts">
+    <div class="qf-item"><span class="qf-label">The core problem</span><span class="qf-value">Multi-discipline timetable</span></div>
+    <div class="qf-item"><span class="qf-label">Second problem</span><span class="qf-value">Tiered memberships</span></div>
+    <div class="qf-item"><span class="qf-label">Belt system</span><span class="qf-value">BJJ side only</span></div>
+    <div class="qf-item"><span class="qf-label">Best UK pricing</span><span class="qf-value">Martialytics</span></div>
+    <div class="qf-item"><span class="qf-label">Specialist options</span><span class="qf-value">Several, unverified</span></div>
+    <div class="qf-item"><span class="qf-label">Last reviewed</span><span class="qf-value">2026-07-22</span></div>
+  </div>
+
+  <p>An MMA gym is administratively the hardest of the three club types on this site, for a reason that has nothing to do with fighting. You are running several distinct disciplines &mdash; BJJ, Muay Thai or striking, wrestling, conditioning, open mat &mdash; on one timetable, for members who have bought different levels of access to it. Some are on everything. Some do Tuesday and Thursday striking only. A handful are on a fight team that trains on top of all of it.</p>
+
+  <p>Then there is the rank problem. Your BJJ programme has belts and stripes. Your striking programme mostly does not. Tools built around a single belt ladder handle half your gym elegantly and the other half awkwardly.</p>
+
+  <h2>Quick Verdict</h2>
+  <div class="verdict">
+    <p><strong>Martialytics</strong> remains our starting recommendation for UK gyms on price and fit &mdash; GBP-native from &pound;69/month for 50 students, purpose-built for martial arts, with grading readiness handled properly for the BJJ side. Test the membership tiers against your actual access levels during the free trial, because that is where multi-discipline gyms hit friction rather than on rank.</p>
+    <p><strong>Gymdesk</strong> is the better answer if your membership structure is genuinely complicated or you have a lot of families, since family accounts, POS and skills tracking are all in the base price. Several specialist MMA-focused platforms also market multi-discipline scheduling and fight-team features &mdash; we have not verified those to the same standard as the tools below, so treat them as worth a demo rather than a recommendation.</p>
+  </div>
+
+  <h2>What an MMA Gym Needs That a Dojo Tool Misses</h2>
+  <p><strong>One timetable, several disciplines.</strong> BJJ, striking, wrestling and conditioning need to be distinct class types with their own registers, not one undifferentiated schedule.</p>
+  <p><strong>Membership tiers that match access.</strong> Discipline-specific membership alongside unlimited access is the norm in MMA and rare in a traditional dojo. Your software has to stop a striking-only member booking into the Wednesday gi class without you policing it manually.</p>
+  <p><strong>Fight team as a layer, not a category.</strong> Competitive fighters are ordinary members with extra structure over the top &mdash; camp scheduling, weight tracking, event admin. Tools that force a binary between &ldquo;fighter&rdquo; and &ldquo;member&rdquo; get this wrong.</p>
+  <p><strong>Rank that applies to some programmes only.</strong> Belt and stripe tracking for the BJJ side; typically nothing equivalent for striking. A tool that insists on a rank for every member creates empty fields you learn to ignore.</p>
+
+  <div class="highlight">
+    <p><strong>Check this before anything else if you are a UK club:</strong> how the tool takes money. Most of these platforms are American and route payments through card processors. A great many UK clubs collect monthly fees by Direct Debit, commonly through GoCardless, because it is cheaper than card fees and fails less often on recurring payments. None of the tools in this comparison has confirmed GoCardless support, and Martialytics documentation lists it explicitly as not yet compatible. Confirm the migration path with the vendor before you commit, not after.</p>
+  </div>
+
+  <h2>How the Tools Compare for an MMA Gym</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th>Tool</th><th>Multi-discipline scheduling</th><th>Family accounts</th><th>Entry price</th><th>Currency</th></tr>
+      <tr><td>Martialytics</td><td>Yes &mdash; class types and registers</td><td>No</td><td>&pound;69/mo (50 students)</td><td><strong>GBP</strong></td></tr>
+      <tr><td>Gymdesk</td><td>Yes &mdash; plus POS and skills tracking</td><td>Yes, included</td><td>$75/mo (&le;50 members)</td><td>USD</td></tr>
+      <tr><td>Zen Planner</td><td>Yes &mdash; general fitness platform</td><td>Not confirmed</td><td>$99/mo (Studio)</td><td>USD</td></tr>
+      <tr><td>Kicksite</td><td>Yes, but simpler</td><td>Not confirmed</td><td>$49/mo (&le;25 students)</td><td>USD</td></tr>
+    </table>
+  </div>
+  <p style="font-size:0.8125rem;color:var(--muted)">Prices are approximate and change &mdash; verify current plans on each vendor&rsquo;s website. USD-priced tools cost a moving amount in pounds depending on the exchange rate. &ldquo;Not confirmed&rdquo; means we could not verify the feature from the vendor&rsquo;s own published material, not that it is absent.</p>
+
+  <div class="catch">
+    <p><strong>A note on the specialist MMA platforms.</strong> A number of tools market themselves specifically at fight gyms with multi-discipline scheduling, fight-camp management and fighter-versus-recreational membership handling. They may well suit you. We have not verified their pricing, review history or feature claims to the standard applied to the four tools above, so we are naming the category rather than recommending a product. If you demo one, ask the same questions: how it takes payment in the UK, whether it does family billing, and what happens to rank on the non-BJJ side.</p>
+  </div>
+
+  <h2>The Decision Framework</h2>
+  <div class="decision">UK gym, want pounds, BJJ programme matters most
+&rarr; Martialytics. Best grading handling and GBP pricing.
+  Test your membership tiers during the free trial.
+
+Complicated membership tiers, families, kit sales at the desk
+&rarr; Gymdesk. Family accounts and POS included in the base
+  price rather than as add-ons.
+
+Mat programme sits alongside real fitness classes
+&rarr; Zen Planner. Built as a fitness platform first, so mixed
+  timetables are native. Price the add-ons before comparing.
+
+Small gym, under ~25 members, keep costs down
+&rarr; Kicksite. Cheapest entry tier. No POS, and reviewers
+  report the attendance scanner is unreliable.
+
+You collect fees by GoCardless Direct Debit today
+&rarr; Ring the vendor before committing. None confirms support.</div>
+
+  <h2>Who This Is NOT For</h2>
+  <div class="not-for">
+    <p>This page is for people running an MMA or combat sports gym as a business. It is not for:</p>
+    <p><strong>Pure BJJ academies</strong> &mdash; if grappling is all you run, the stripe-tracking question matters more than multi-discipline scheduling. See our BJJ page instead.</p>
+    <p><strong>Traditional dojos</strong> &mdash; a single-discipline kyu ladder has different needs again.</p>
+    <p><strong>Individual coaches</strong> &mdash; if you rent mat space and coach a handful of fighters, none of this repays its cost.</p>
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <p class="faq-q">Can these tools stop a striking-only member booking a BJJ class?</p>
+      <p class="faq-a">This is the question to test in a trial rather than take on trust. All four tools support distinct class types and membership plans, but how strictly a plan restricts booking varies. Set up your real membership tiers during the free trial and try to book something a member should not have access to &mdash; it takes ten minutes and it is the most common source of friction in a multi-discipline gym.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">How do I handle belts for BJJ when striking has no ranks?</p>
+      <p class="faq-a">Run rank as something that applies to the BJJ programme rather than to the member globally, where the tool allows it. In practice most gyms record the belt on the student profile and simply leave it unused for striking-only members. It is untidy but harmless &mdash; the more useful thing is making sure grading readiness draws on BJJ attendance only, not total attendance across all disciplines.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Is there software for managing a fight team specifically?</p>
+      <p class="faq-a">Several platforms market fight-camp and fighter-tracking features. We have not verified them to the standard used for the main comparison, so we are not recommending a specific one. What we would say is that fight-team admin is usually a small number of people with high-touch needs &mdash; be realistic about whether that justifies choosing your whole gym&rsquo;s platform around it.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">What does MMA gym software cost in the UK?</p>
+      <p class="faq-a">Broadly &pound;60&ndash;&pound;200 per month for a gym of 50 to 150 members, plus payment processing of roughly 1&ndash;2% on top of the card processor&rsquo;s own fee. USD-priced tools move with the exchange rate, which is worth factoring in if you are comparing a dollar price against Martialytics&rsquo; pound one.</p>
+    </div>
+  </div>
+
+  <div class="related">
+    <p class="related-label">Read next</p>
+    <div class="related-links">
+      <a href="/martial-arts/best-martial-arts-software-uk">Best Martial Arts Software UK (2026)</a>
+      <a href="/martial-arts/bjj-jiu-jitsu-software">BJJ / jiu-jitsu academy software</a>
+      <a href="/martial-arts/belt-attendance-tracking-software">Belt &amp; attendance tracking compared</a>
+      <a href="/martial-arts/martialytics-review">Martialytics review</a>
+      <a href="/martial-arts/best-free-martial-arts-software">Best free martial arts software</a>
+    </div>
+  </div>
+</main>
+<footer>
+  <p>&copy; 2026 StudioSorted &middot; Independent software reviews for UK martial arts schools and studios &middot; <a href="/">Home</a></p>
+  <p style="margin-top:0.4rem">Some links are affiliate links. We may earn a small commission if you sign up &mdash; at no extra cost to you. This never influences our reviews.</p>
+  <p style="margin-top:0.4rem">Pricing and features change frequently &mdash; always verify current details with the vendor before purchasing.</p>
+</footer>
+</body>
+</html>

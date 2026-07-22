@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Martialytics vs RainMaker (2026): Grading Tools or Sales Engine? &mdash; StudioSorted</title>
+<meta name="description" content="Independent comparison of Martialytics and RainMaker for martial arts schools. Transparent GBP pricing versus quote-on-enquiry, CRM depth, and RainMaker's documented reporting problems.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#0f0f0f;--white:#fafaf8;--ink:#1c1c1c;--muted:#6b6b6b;
+  --border:#e2e0d8;--accent:#7c3aed;--accent-soft:#f5f3ff;
+  --orange-soft:#fff8f0;--red-soft:#fef2f2;--green-soft:#f0fdf4;
+  --font-d:'Fraunces',Georgia,serif;--font-b:'DM Sans',system-ui,sans-serif;
+  --r:6px;--max:760px;
+}
+body{font-family:var(--font-b);background:var(--white);color:var(--ink);line-height:1.7;font-size:16px}
+a{color:var(--accent);text-underline-offset:3px;font-weight:500}
+header{border-bottom:2px solid var(--black);background:var(--white);position:sticky;top:0;z-index:200}
+.hdr{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:58px;padding:0 1.5rem}
+.logo{font-family:var(--font-d);font-size:1.2rem;font-weight:700;color:var(--black);text-decoration:none;flex-shrink:0}
+.logo span{color:var(--accent)}
+.nav{display:flex;gap:0;list-style:none;margin:0}
+.nav>li{position:relative}
+.nav>li>a{display:block;font-size:0.8125rem;font-weight:500;color:var(--muted);text-decoration:none;padding:0.5rem 0.875rem}
+.nav>li>a:hover{color:var(--black)}
+.nav>li>a.has-dropdown::after{content:'▾';font-size:0.6rem;margin-left:0.3rem;vertical-align:middle}
+.dropdown{display:none;position:absolute;top:100%;left:0;background:var(--white);border:1px solid var(--border);border-top:2px solid var(--accent);border-radius:0 0 var(--r) var(--r);min-width:230px;z-index:300;box-shadow:0 4px 12px rgba(0,0,0,0.08)}
+.nav>li:hover .dropdown{display:block}
+.dropdown a{display:block;padding:0.625rem 1rem;font-size:0.8125rem;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--border);font-weight:400}
+.dropdown a:last-child{border-bottom:none}
+.dropdown a:hover{background:var(--accent-soft);color:var(--black)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:0.5rem;background:none;border:none;margin-left:auto}
+.hamburger span{display:block;width:22px;height:2px;background:var(--black);transition:all 0.25s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;background:var(--white);border-top:1px solid var(--border);padding:1rem 1.5rem 1.5rem}
+.mobile-menu.open{display:block}
+.mobile-section{margin-bottom:1.25rem}
+.mobile-section-label{font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:0.5rem;display:block}
+.mobile-menu a{display:block;font-size:0.9375rem;color:var(--ink);text-decoration:none;padding:0.5rem 0;border-bottom:1px solid var(--border);font-weight:400}
+.mobile-menu a:last-child{border-bottom:none}
+.mobile-menu a:hover{color:var(--accent)}
+main{max-width:var(--max);margin:0 auto;padding:2.5rem 1.5rem 5rem}
+.badge{background:var(--accent-soft);border:1px solid #c4b5fd;border-radius:var(--r);padding:0.375rem 0.875rem;font-size:0.8rem;color:#5b21b6;font-weight:500;display:inline-flex;align-items:center;gap:0.4rem;margin-bottom:1.75rem}
+h1{font-family:var(--font-d);font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;line-height:1.15;letter-spacing:-0.03em;color:var(--black);margin-bottom:1rem}
+h2{font-family:var(--font-d);font-size:1.25rem;font-weight:600;letter-spacing:-0.02em;color:var(--black);margin:2.25rem 0 0.625rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border)}
+h3{font-size:1rem;font-weight:600;color:var(--black);margin:1.5rem 0 0.4rem}
+p{margin-bottom:1rem}
+strong{font-weight:600;color:var(--black)}
+ul,ol{margin:0 0 1rem 1.25rem}
+li{margin-bottom:0.4rem}
+.table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.25rem 0;border-radius:var(--r);border:1px solid var(--border)}
+.table-wrap table{margin:0;border:none;border-radius:0;min-width:520px}
+table{width:100%;border-collapse:collapse;font-size:0.875rem;margin:1.25rem 0;border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+th{background:var(--black);color:var(--white);font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;padding:0.6rem 0.875rem;text-align:left;font-weight:600}
+td{padding:0.6rem 0.875rem;border-bottom:1px solid var(--border);vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even) td{background:#f7f6f2}
+.verdict{background:var(--accent-soft);border-left:3px solid var(--accent);border-radius:0 var(--r) var(--r) 0;padding:1rem 1.25rem;margin:1.25rem 0}
+.catch{background:var(--orange-soft);border-left:3px solid #f97316;border-radius:0 var(--r) var(--r) 0;padding:1rem 1.25rem;margin:1.25rem 0}
+.not-for{background:var(--red-soft);border-left:3px solid #ef4444;border-radius:0 var(--r) var(--r) 0;padding:1rem 1.25rem;margin:1.25rem 0}
+.highlight{background:var(--green-soft);border-left:3px solid #16a34a;border-radius:0 var(--r) var(--r) 0;padding:1rem 1.25rem;margin:1.25rem 0}
+.catch p:last-child,.verdict p:last-child,.not-for p:last-child,.highlight p:last-child{margin-bottom:0}
+.card{border:1px solid var(--border);border-radius:var(--r);padding:1.25rem;margin:1rem 0}
+.card h3{margin-top:0}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.25rem 0}
+.tag{display:inline-block;font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.07em;padding:0.2rem 0.5rem;border-radius:3px;margin-bottom:0.5rem}
+.tag-best{background:var(--green-soft);color:#166534}
+.tag-ok{background:var(--accent-soft);color:#5b21b6}
+.tag-weak{background:var(--red-soft);color:#991b1b}
+.decision{background:#f7f6f2;border:1px solid var(--border);border-radius:var(--r);padding:1.25rem;font-family:'Courier New',monospace;font-size:0.8125rem;line-height:1.9;margin:1.25rem 0;white-space:pre-wrap}
+.quick-facts{background:#f7f6f2;border:1px solid var(--border);border-radius:var(--r);padding:1.25rem;margin:1.25rem 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0.75rem}
+.qf-item{display:flex;flex-direction:column;gap:0.2rem}
+.qf-label{font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.07em;color:var(--muted)}
+.qf-value{font-size:0.9375rem;font-weight:600;color:var(--black)}
+.faq{margin:1.25rem 0}
+.faq-item{border-bottom:1px solid var(--border);padding:1rem 0}
+.faq-item:last-child{border-bottom:none}
+.faq-q{font-weight:600;color:var(--black);margin-bottom:0.5rem;font-size:0.9375rem}
+.faq-a{color:var(--ink);font-size:0.9375rem;margin:0}
+.cta-box{background:var(--black);border-radius:var(--r);padding:1.5rem;margin:2rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.cta-box p{color:#d4d4d4;margin:0;font-size:0.9rem}
+.cta-btn{background:var(--accent);color:var(--white)!important;padding:0.625rem 1.25rem;border-radius:var(--r);text-decoration:none!important;font-weight:600;font-size:0.9rem;white-space:nowrap;display:inline-block}
+.related{border-top:1px solid var(--border);margin-top:3rem;padding-top:1.5rem}
+.related-label{font-size:0.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;font-weight:600;margin-bottom:0.75rem}
+.related-links{display:flex;flex-direction:column;gap:0.5rem}
+.related-links a{font-size:0.9375rem;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:0.5rem}
+.related-links a::before{content:'→';color:var(--accent);font-weight:700}
+footer{border-top:1px solid var(--border);padding:1.75rem 1.5rem;text-align:center;font-size:0.8rem;color:var(--muted)}
+footer a{color:var(--muted)}
+@media(max-width:680px){
+  .nav{display:none}
+  .hamburger{display:flex}
+  main{padding:2rem 1rem 4rem}
+  h1{font-size:1.625rem;line-height:1.2}
+  h2{font-size:1.125rem}
+  .two-col{grid-template-columns:1fr}
+  .cta-box{flex-direction:column;align-items:flex-start}
+  .quick-facts{grid-template-columns:1fr 1fr}
+  table{font-size:0.8125rem}
+  th,td{padding:0.5rem 0.625rem}
+}
+</style>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://studiosorted.co.uk/martial-arts/martialytics-vs-rainmaker/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "datePublished": "2026-07-22",
+  "dateModified": "2026-07-22",
+  "url": "https://studiosorted.co.uk/martial-arts/martialytics-vs-rainmaker/",
+  "headline": "Martialytics vs RainMaker (2026): Grading Tools or Sales Engine?",
+  "description": "Independent comparison of Martialytics and RainMaker for martial arts schools. Transparent GBP pricing versus quote-on-enquiry, CRM depth, and RainMaker's documented reporting problems.",
+  "author": {
+    "@type": "Organization",
+    "name": "StudioSorted"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "StudioSorted",
+    "url": "https://studiosorted.co.uk"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://studiosorted.co.uk/martial-arts/martialytics-vs-rainmaker/"
+  }
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="hdr">
+    <a href="/" class="logo">Studio<span>Sorted</span></a>
+    <ul class="nav">
+      <li><a href="/martial-arts/best-martial-arts-software-uk">Best Software</a></li>
+      <li><a href="#" class="has-dropdown">By Discipline</a>
+        <div class="dropdown">
+          <a href="/martial-arts/bjj-jiu-jitsu-software">BJJ / Jiu-Jitsu Software</a>
+          <a href="/martial-arts/karate-studio-software">Karate Club Software</a>
+          <a href="/martial-arts/mma-gym-software">MMA Gym Software</a>
+        </div>
+      </li>
+      <li><a href="#" class="has-dropdown">Guides</a>
+        <div class="dropdown">
+          <a href="/martial-arts/belt-attendance-tracking-software">Belt &amp; Attendance Tracking</a>
+          <a href="/martial-arts/best-free-martial-arts-software">Best Free Software</a>
+        </div>
+      </li>
+      <li><a href="#" class="has-dropdown">Reviews</a>
+        <div class="dropdown">
+          <a href="/martial-arts/martialytics-review">Martialytics Review</a>
+          <a href="/martial-arts/martialytics-vs-kicksite">Martialytics vs Kicksite</a>
+          <a href="/martial-arts/martialytics-vs-rainmaker">Martialytics vs RainMaker</a>
+        </div>
+      </li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu">
+    <div class="mobile-section">
+      <span class="mobile-section-label">Start here</span>
+      <a href="/">Home</a>
+      <a href="/martial-arts/best-martial-arts-software-uk">Best Martial Arts Software UK</a>
+    </div>
+    <div class="mobile-section">
+      <span class="mobile-section-label">By discipline</span>
+      <a href="/martial-arts/bjj-jiu-jitsu-software">BJJ / Jiu-Jitsu Software</a>
+      <a href="/martial-arts/karate-studio-software">Karate Club Software</a>
+      <a href="/martial-arts/mma-gym-software">MMA Gym Software</a>
+    </div>
+    <div class="mobile-section">
+      <span class="mobile-section-label">Guides</span>
+      <a href="/martial-arts/belt-attendance-tracking-software">Belt &amp; Attendance Tracking</a>
+      <a href="/martial-arts/best-free-martial-arts-software">Best Free Software</a>
+    </div>
+    <div class="mobile-section">
+      <span class="mobile-section-label">Reviews</span>
+      <a href="/martial-arts/martialytics-review">Martialytics Review</a>
+      <a href="/martial-arts/martialytics-vs-kicksite">Martialytics vs Kicksite</a>
+      <a href="/martial-arts/martialytics-vs-rainmaker">Martialytics vs RainMaker</a>
+    </div>
+  </nav>
+</header>
+<script>
+document.getElementById('hamburger').addEventListener('click',function(){
+  this.classList.toggle('open');
+  document.getElementById('mobile-menu').classList.toggle('open');
+});
+</script>
+
+<main>
+  <div class="badge">&#10003; Independent review &mdash; no sponsored content</div>
+  <h1>Martialytics vs RainMaker (2026)</h1>
+
+  <div class="quick-facts">
+    <div class="qf-item"><span class="qf-label">Martialytics from</span><span class="qf-value">&pound;69/mo (50 students)</span></div>
+    <div class="qf-item"><span class="qf-label">RainMaker price</span><span class="qf-value">Quote on enquiry</span></div>
+    <div class="qf-item"><span class="qf-label">Martialytics strength</span><span class="qf-value">Grading readiness</span></div>
+    <div class="qf-item"><span class="qf-label">RainMaker strength</span><span class="qf-value">Lead and sales CRM</span></div>
+    <div class="qf-item"><span class="qf-label">RainMaker rating</span><span class="qf-value">~4.3 / 5</span></div>
+    <div class="qf-item"><span class="qf-label">Last reviewed</span><span class="qf-value">2026-07-22</span></div>
+  </div>
+
+  <p>This is a genuine fork rather than a like-for-like comparison. Martialytics is built around running a club properly &mdash; registers, gradings, fees. RainMaker is built around growing one, with lead tracking and marketing automation at its centre. Both do the other thing to some degree; neither is really trying to be the other.</p>
+
+  <h2>Quick Verdict</h2>
+  <div class="verdict">
+    <p><strong>Most UK clubs should start with Martialytics.</strong> It is cheaper, transparently priced in pounds, and stronger at the recurring job that actually eats your evenings &mdash; working out who is ready to grade.</p>
+    <p><strong>RainMaker earns its place if sales is genuinely your bottleneck.</strong> If you run paid trials and intro offers and actively work a lead list, its CRM depth is well beyond anything Martialytics offers. Go in aware of two things reviewers raise consistently: the reporting is unreliable, and the price is neither published nor cheap.</p>
+  </div>
+
+  <h2>Head to Head</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th></th><th>Martialytics</th><th>RainMaker</th></tr>
+      <tr><td>Entry price</td><td>&pound;69/mo (50 students)</td><td>Quote on enquiry</td></tr>
+      <tr><td>Price transparency</td><td>Published, with calculator</td><td>Not published</td></tr>
+      <tr><td>Currency</td><td><strong>GBP</strong></td><td>USD</td></tr>
+      <tr><td>Built around</td><td>Running the club</td><td>Growing the club</td></tr>
+      <tr><td>Grading</td><td>Traffic-light readiness view</td><td>Attendance and membership records</td></tr>
+      <tr><td>Lead and prospect CRM</td><td>Basic</td><td>Strong &mdash; core of the product</td></tr>
+      <tr><td>Marketing automation</td><td>Group email</td><td>Yes, developed</td></tr>
+      <tr><td>Reporting</td><td>More canned reports requested</td><td>Documented reliability complaints</td></tr>
+      <tr><td>Free trial</td><td>30 days, no card</td><td>Not published &mdash; ask</td></tr>
+      <tr><td>Rating</td><td>4.7&ndash;4.8 / 5</td><td>~4.3 / 5, several hundred reviews</td></tr>
+    </table>
+  </div>
+  <p style="font-size:0.8125rem;color:var(--muted)">Prices are approximate and change &mdash; verify current plans on each vendor&rsquo;s website. USD-priced tools cost a moving amount in pounds depending on the exchange rate. &ldquo;Not confirmed&rdquo; means we could not verify the feature from the vendor&rsquo;s own published material, not that it is absent.</p>
+
+  <h2>The Reporting Problem Worth Understanding</h2>
+  <div class="catch">
+    <p>The most repeated complaint in RainMaker reviews is reporting. Multiple reviewers report that financial reports return conflicting figures, and that they resort to exporting data into Excel and reconciling it manually. For a product positioned partly on business intelligence, that is a significant catch rather than a minor one.</p>
+    <p>It matters more than it might sound. If you are choosing RainMaker specifically for its growth and sales tooling, the reports are how you would measure whether that tooling is working. Reviewers also note the product updates more slowly than competitors, and several observe it has become noticeably pricier over the past year.</p>
+  </div>
+
+  <h2>What Each Does Better</h2>
+  <div class="two-col">
+    <div class="card">
+      <h3>Martialytics wins on</h3>
+      <ul>
+        <li>Published pricing you can compare before enquiring</li>
+        <li>GBP-native &mdash; no exchange rate exposure</li>
+        <li>Grading readiness, done properly</li>
+        <li>Every feature on every plan</li>
+        <li>30-day trial without a card or a sales call</li>
+        <li>Lower total cost for most club sizes</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>RainMaker wins on</h3>
+      <ul>
+        <li>Lead and prospect tracking depth</li>
+        <li>Marketing automation for intro offers and trials</li>
+        <li>Support &mdash; consistently praised in reviews</li>
+        <li>Automation and billing integration</li>
+        <li>Maturity: several hundred reviews at ~4.3/5</li>
+        <li>Suits schools where sales is a defined function</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <p><strong>Check this before anything else if you are a UK club:</strong> how the tool takes money. Most of these platforms are American and route payments through card processors. A great many UK clubs collect monthly fees by Direct Debit, commonly through GoCardless, because it is cheaper than card fees and fails less often on recurring payments. None of the tools in this comparison has confirmed GoCardless support, and Martialytics documentation lists it explicitly as not yet compatible. Confirm the migration path with the vendor before you commit, not after.</p>
+  </div>
+
+  <h2>Who Should Choose Which</h2>
+  <div class="decision">UK club, gradings every term, want a known price
+&rarr; Martialytics. Published GBP pricing, better grading
+  tools, and you can trial it without talking to anyone.
+
+Sales is genuinely your bottleneck, not admin
+&rarr; RainMaker. The CRM depth is real. Budget for the
+  reporting frustration or plan to reconcile in Excel.
+
+You want to compare costs before committing time
+&rarr; Martialytics. RainMaker quotes on enquiry, so a
+  like-for-like comparison means a sales conversation.
+
+You run paid trials and intro offers at volume
+&rarr; RainMaker&rsquo;s automation is built for exactly this.
+
+You need reliable financial reporting above all
+&rarr; Neither shines. Martialytics reviewers ask for more
+  canned reports; RainMaker&rsquo;s are documented as
+  inconsistent. Plan to export either way.</div>
+
+  <h2>Who This Is NOT For</h2>
+  <div class="not-for">
+    <p><strong>Small clubs under about 25 students</strong> &mdash; RainMaker in particular is aimed at schools running a real sales operation. At that size look at Kicksite or the free options.</p>
+    <p><strong>Clubs that want a fixed, knowable monthly cost</strong> &mdash; RainMaker does not publish pricing, so budgeting means enquiring first.</p>
+    <p><strong>Anyone collecting by GoCardless Direct Debit</strong> &mdash; neither tool confirms support. Resolve this before choosing either.</p>
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <p class="faq-q">How much does RainMaker cost?</p>
+      <p class="faq-a">RainMaker does not publish pricing &mdash; it quotes on enquiry. Reviewers describe it as toward the expensive end for the category, and several note it has become noticeably pricier over the past year. If budget certainty matters, that opacity is itself a factor in the comparison.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Is RainMaker&rsquo;s reporting problem serious?</p>
+      <p class="faq-a">It is the most consistently repeated complaint in its reviews. Multiple reviewers report financial reports returning conflicting figures and describe exporting to Excel to reconcile manually. Whether that is disqualifying depends on how much you rely on in-product reporting &mdash; but go in expecting to verify numbers rather than trust them.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Which is better for grading and belt progression?</p>
+      <p class="faq-a">Martialytics, clearly. Its traffic-light readiness view is built to answer who is eligible to grade from attendance and time in rank. RainMaker records attendance and membership properly but is not built around progression in the same way &mdash; its centre of gravity is lead and member lifecycle, not the syllabus.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Can I use RainMaker just for the CRM and something else for gradings?</p>
+      <p class="faq-a">You can, but running two systems means double entry of your student roll and two sources of truth for attendance. For most clubs that costs more time than the CRM saves. If sales genuinely is your constraint, it is usually better to commit to one system and accept its weaker side.</p>
+    </div>
+  </div>
+
+  <div class="related">
+    <p class="related-label">Read next</p>
+    <div class="related-links">
+      <a href="/martial-arts/best-martial-arts-software-uk">Best Martial Arts Software UK (2026)</a>
+      <a href="/martial-arts/martialytics-review">Martialytics review</a>
+      <a href="/martial-arts/martialytics-vs-kicksite">Martialytics vs Kicksite</a>
+      <a href="/martial-arts/belt-attendance-tracking-software">Belt &amp; attendance tracking compared</a>
+      <a href="/martial-arts/karate-studio-software">Karate club software</a>
+    </div>
+  </div>
+</main>
+<footer>
+  <p>&copy; 2026 StudioSorted &middot; Independent software reviews for UK martial arts schools and studios &middot; <a href="/">Home</a></p>
+  <p style="margin-top:0.4rem">Some links are affiliate links. We may earn a small commission if you sign up &mdash; at no extra cost to you. This never influences our reviews.</p>
+  <p style="margin-top:0.4rem">Pricing and features change frequently &mdash; always verify current details with the vendor before purchasing.</p>
+</footer>
+</body>
+</html>
